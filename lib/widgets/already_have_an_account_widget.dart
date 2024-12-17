@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class AlreadyHaveAnAccountWidget extends StatelessWidget {
@@ -25,6 +24,9 @@ class AlreadyHaveAnAccountWidget extends StatelessWidget {
             child: const Text(
               'Log-in',
               style: TextStyle(
+                  decoration: TextDecoration.underline,
+                  decorationColor: Color(0xff748288),
+                  decorationThickness: 2,
                   fontSize: 15,
                   color: Color(0xff748288),
                   fontWeight: FontWeight.bold),

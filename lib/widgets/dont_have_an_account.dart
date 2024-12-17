@@ -35,6 +35,9 @@ class DontHaveAnAccountWidget extends StatelessWidget {
             child: const Text(
               'Sign-up',
               style: TextStyle(
+                  decoration: TextDecoration.underline,
+                  decorationColor: Color(0xff748288),
+                  decorationThickness: 2,
                   fontSize: 15,
                   color: Color(0xff748288),
                   fontWeight: FontWeight.bold),
