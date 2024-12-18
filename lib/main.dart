@@ -1,12 +1,14 @@
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:learn_api_in_flutter/core/api/dio_consumer.dart';
 import 'package:learn_api_in_flutter/cubit/user_cubit.dart';
 import 'package:learn_api_in_flutter/screens/sign_in_screen.dart';
 
 void main() {
   runApp(
     BlocProvider(
-      create: (context) => UserCubit(),
+      create: (context) => UserCubit(DioConsumer(dio: Dio())),
       child: const LearnAndUsingApi(),
     ),
   );
